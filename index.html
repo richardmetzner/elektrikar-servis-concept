@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://richardmetzner.github.io/elektrikar-servis-concept/">
 <link rel="canonical" href="https://richardmetzner.github.io/elektrikar-servis-concept/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315181b'/%3E%3Crect x='10' y='4' width='12' height='24' rx='2' fill='none' stroke='%23ffdd46' stroke-width='2'/%3E%3Crect x='13' y='8' width='6' height='8' rx='1' fill='%23ffdd46'/%3E%3C/svg%3E">
-<!-- Pouze ověřené údaje. openingHoursSpecification a areaServed doplnit až po ověření u klienta. -->
+<!-- Pouze ověřené údaje. openingHoursSpecification doplnit až po potvrzení provozní doby klientem. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -37,6 +37,7 @@
     "latitude": 50.0384158,
     "longitude": 14.4297168
   },
+  "areaServed": "Praha a okolí",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Služby",
@@ -102,7 +103,6 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.1;margin:0}
 p{margin:0 0 1rem}
 .skip{position:absolute;left:-999px;top:0;background:var(--yellow);color:var(--ink);padding:.6rem 1rem;z-index:50;font-weight:700}
 .skip:focus{left:1rem;top:1rem}
-.todo{font-family:var(--mono);font-size:.82em;color:var(--yellow);border:1px dashed currentColor;border-radius:3px;padding:.05em .4em;background:rgba(255,221,70,.08);white-space:normal}
 .mono{font-family:var(--mono)}
 
 /* ---------- hlavička ---------- */
@@ -198,9 +198,6 @@ h3{font-size:1.35rem;margin:2.25rem 0 .35rem}
 .protocol dt{grid-column:2;font:700 1.2rem/1.2 var(--display);margin-bottom:.3rem}
 .protocol dd{grid-column:2;margin:0;color:var(--soft)}
 .protocol div::before{content:"";grid-row:1 / span 2;width:1.6rem;height:1.6rem;margin-top:-.1rem;border-radius:4px;background:var(--yellow) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%2315181b' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
-.facts{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.75rem}
-.facts li{background:var(--panel);border:1px solid var(--line-soft);border-radius:6px;padding:.9rem 1rem;color:var(--soft)}
-.facts b{display:block;font:600 .72rem/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.25rem}
 
 /* postup: tři fáze */
 .phases{list-style:none;margin:1.75rem 0 2rem;padding:0;position:relative;display:grid;gap:1.75rem}
@@ -227,8 +224,6 @@ h3{font-size:1.35rem;margin:2.25rem 0 .35rem}
 .map{display:inline-block;margin-top:.35rem;font:600 .82rem/1.4 var(--mono);letter-spacing:.04em}
 .term dd{margin:0}
 .gps{font:500 .8rem/1.6 var(--mono);color:var(--muted)}
-.owner{font-size:.9rem;color:var(--muted);margin:1.25rem 0 0}
-.owner a{color:var(--soft)}
 .contact-cta{margin-top:2rem}
 
 /* ---------- patička ---------- */
@@ -252,7 +247,6 @@ h3{font-size:1.35rem;margin:2.25rem 0 .35rem}
   .kicker{letter-spacing:.12em}
   .din{grid-template-columns:repeat(3,minmax(0,1fr))}
   .mod--spare{grid-column:span 3}
-  .facts{grid-template-columns:repeat(3,minmax(0,1fr))}
   .protocol{display:grid;grid-template-columns:1fr 1fr;column-gap:2rem}
   .term{grid-template-columns:24px 8.5rem minmax(0,1fr);align-items:baseline}
   .term::before{grid-row:auto;align-self:start;margin-top:0}
@@ -355,7 +349,7 @@ h3{font-size:1.35rem;margin:2.25rem 0 .35rem}
         <li class="mod"><span class="mod__id" aria-hidden="true"><span>F2</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Svítidla a&nbsp;LED osvětlení</h4><p>Namontujeme a&nbsp;odborně zapojíme jakékoli světlo, včetně LED svítidel.</p></li>
         <li class="mod"><span class="mod__id" aria-hidden="true"><span>F3</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Připojení spotřebičů</h4><p>Odborně zapojíme Váš nový spotřebič.</p></li>
         <li class="mod"><span class="mod__id" aria-hidden="true"><span>F4</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Poruchy</h4><p>Najdeme, kde je příčina, a&nbsp;poruchu opravíme.</p></li>
-        <li class="mod mod--wide"><span class="mod__id" aria-hidden="true"><span>F5</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Havarijní servis</h4><p>Pomoc, když elektřina vypoví službu a&nbsp;nemůže to čekat – v&nbsp;bytě, domě i&nbsp;firmě.</p></li>
+        <li class="mod mod--wide"><span class="mod__id" aria-hidden="true"><span>F5</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Havarijní servis</h4><p>Pomoc, když elektřina vypoví službu a&nbsp;nemůže to čekat – v&nbsp;bytě, domě i&nbsp;firmě, po Praze a&nbsp;okolí.</p></li>
       </ul>
 
       <h3>Další elektro práce</h3>
@@ -387,13 +381,6 @@ h3{font-size:1.35rem;margin:2.25rem 0 .35rem}
         <div><dt>Čistá práce</dt><dd>Pracujeme pečlivě a&nbsp;dotahujeme detaily. Po sobě uklidíme, abyste neměli práci navíc.</dd></div>
         <div><dt>Domluvený termín</dt><dd>Přijdeme v&nbsp;čas, na kterém se domluvíme. Když se něco změní, dáme Vám vědět předem.</dd></div>
       </dl>
-
-      <h3>Co si můžete ověřit</h3>
-      <ul class="facts">
-        <li><b>Kvalifikace</b>Výuční list a&nbsp;odborná způsobilost podle vyhlášky&nbsp;50.</li>
-        <li><b>Živnost</b>David Mikuláštík, IČO 06614281 – <a href="https://ares.gov.cz/ekonomicke-subjekty?ico=06614281" rel="noopener">záznam v&nbsp;registru ARES</a>.</li>
-        <li><b>Hodnocení zákazníků</b><span class="todo">[DOPLNIT – odkaz na skutečné recenze, např. Google]</span></li>
-      </ul>
     </div>
   </section>
 
@@ -429,11 +416,8 @@ h3{font-size:1.35rem;margin:2.25rem 0 .35rem}
             <p class="term"><span class="term__label">Adresa</span><span class="term__val">Elektrikar-servis<br>K&nbsp;Ryšánce 1592/22<br>147&nbsp;00 Praha&nbsp;4&nbsp;–&nbsp;Krč<br><span class="gps">GPS 50.0384158, 14.4297168</span><br><a class="map" href="https://mapy.cz/fnc/v1/showmap?center=14.4297168,50.0384158&amp;zoom=17&amp;marker=true" rel="noopener">Ukázat na mapě →</a></span></p>
           </address>
           <dl class="terminals">
-            <!-- Po ověření nahradit např.: <dd class="term__val"><time datetime="Mo-Su 00:00-24:00">Po–Ne, nonstop</time></dd> a doplnit openingHoursSpecification do JSON-LD -->
-            <div class="term"><dt class="term__label">Provozní doba</dt><dd class="term__val"><span class="todo">[DOPLNIT – Google uvádí nonstop, ověřit]</span></dd></div>
-            <div class="term"><dt class="term__label">Kde pracujeme</dt><dd class="term__val"><span class="todo">[DOPLNIT – oblast působnosti]</span></dd></div>
+            <div class="term"><dt class="term__label">Kde pracujeme</dt><dd class="term__val">Praha a&nbsp;okolí</dd></div>
           </dl>
-          <p class="owner">Provozovatel: David Mikuláštík, IČO 06614281</p>
         </div>
         <div class="contact-cta">
           <p class="sub">Popište, co nefunguje nebo co chcete zapojit. Na místě pak najdeme příčinu a&nbsp;řekneme cenu.</p>
