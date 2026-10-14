@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Elektrikář Praha 4 – Krč | Elektrikar-servis</title>
+<meta name="description" content="Elektrikář Praha 4 – Krč, tel. +420 730 665 378. Vyučení elektrikáři s vyhláškou 50: opravy zásuvek a vypínačů, svítidla, spotřebiče, poruchy a havarijní servis.">
+<meta name="theme-color" content="#15181b">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="Elektrikář Praha 4 – Krč | Elektrikar-servis">
+<meta property="og:description" content="Vyučení elektrikáři s vyhláškou 50 z Prahy 4 – Krče. Opravy zásuvek a vypínačů, svítidla, spotřebiče, poruchy a havarijní servis.">
+<meta property="og:url" content="https://richardmetzner.github.io/elektrikar-servis-concept/">
+<link rel="canonical" href="https://richardmetzner.github.io/elektrikar-servis-concept/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315181b'/%3E%3Crect x='10' y='4' width='12' height='24' rx='2' fill='none' stroke='%23ffdd46' stroke-width='2'/%3E%3Crect x='13' y='8' width='6' height='8' rx='1' fill='%23ffdd46'/%3E%3C/svg%3E">
+<!-- Pouze ověřené údaje. openingHoursSpecification a areaServed doplnit až po ověření u klienta. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "@id": "https://richardmetzner.github.io/elektrikar-servis-concept/#firma",
+  "name": "Elektrikar-servis",
+  "description": "Vyučení elektrikáři s kvalifikací podle vyhlášky 50 z Prahy 4 – Krče. Drobné opravy zásuvek a vypínačů, montáž svítidel, připojení spotřebičů, poruchy a havarijní servis.",
+  "url": "https://richardmetzner.github.io/elektrikar-servis-concept/",
+  "telephone": "+420 730 665 378",
+  "email": "mikulastik.david93@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "K Ryšánce 1592/22",
+    "postalCode": "147 00",
+    "addressLocality": "Praha 4 – Krč",
+    "addressCountry": "CZ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.0384158,
+    "longitude": 14.4297168
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Služby",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Zásuvky a vypínače" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Svítidla a LED osvětlení" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Připojení spotřebičů" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Poruchy" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Havarijní servis" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Elektroinstalace v bytech a domech" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rozvody elektřiny" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Komerční prostory" } }
+    ]
+  }
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#15181b;
+  --panel:#1c2125;
+  --panel-2:#252b30;
+  --line:#3a424a;
+  --line-soft:#272d33;
+  --text:#eef0f1;
+  --soft:#c8ced3;
+  --muted:#9fa8b0;
+  --yellow:#ffdd46;
+  --yellow-hi:#ffe673;
+  --wire:rgba(255,221,70,.45);
+  --ink:#15181b;
+  --module:#e9ebec;
+  --module-ink:#1a1d20;
+  --module-muted:#4a535b;
+  --display:"DIN Alternate","Bahnschrift","DIN Next","D-DIN","Roboto Condensed","sans-serif-condensed","Arial Narrow",system-ui,sans-serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono",Menlo,Consolas,monospace;
+  /* sběrnice: osa vodiče a odsazení obsahu */
+  --pad-l:40px;
+  --pad-r:16px;
+  --rail-x:16px;
+  --off:calc(var(--pad-l) - var(--rail-x));
+  --hero-pt:2.25rem;
+  color-scheme:dark;
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:1rem}
+body{
+  margin:0;min-height:100vh;
+  background-color:var(--bg);
+  background-image:
+    linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:24px 24px;
+  color:var(--text);
+  font:1.0625rem/1.6 var(--sans);
+  padding-bottom:calc(76px + env(safe-area-inset-bottom));
+}
+a{color:var(--yellow);text-underline-offset:.2em}
+a:hover{color:var(--yellow-hi)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:2px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.1;margin:0}
+p{margin:0 0 1rem}
+.skip{position:absolute;left:-999px;top:0;background:var(--yellow);color:var(--ink);padding:.6rem 1rem;z-index:50;font-weight:700}
+.skip:focus{left:1rem;top:1rem}
+.todo{font-family:var(--mono);font-size:.82em;color:var(--yellow);border:1px dashed currentColor;border-radius:3px;padding:.05em .4em;background:rgba(255,221,70,.08);white-space:normal}
+.mono{font-family:var(--mono)}
+
+/* ---------- hlavička ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:1200px;margin:0 auto;padding:.9rem var(--pad-r) .9rem 16px}
+.brand{display:flex;align-items:center;gap:.65rem;color:var(--text);text-decoration:none;font:700 .86rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.brand:hover{color:var(--text)}
+.brand__mark{width:14px;height:22px;border:2px solid var(--yellow);border-radius:3px;position:relative;flex:none}
+.brand__mark::after{content:"";position:absolute;left:2px;right:2px;top:2px;height:7px;background:var(--yellow);border-radius:1px}
+.legend{display:none}
+@media (max-width:359px){.top__call{display:none}}
+.top__call{font:700 .9rem/1 var(--mono);color:var(--yellow);text-decoration:none;border:1px solid var(--wire);border-radius:4px;padding:.55rem .7rem;white-space:nowrap}
+
+/* ---------- rozvaděč (hlavní plocha se sběrnicí) ---------- */
+.board{position:relative;max-width:1200px;margin:0 auto;padding:0 var(--pad-r) 0 var(--pad-l)}
+.board::before{content:"";position:absolute;left:calc(var(--rail-x) - 1px);top:calc(var(--hero-pt) + .6rem);bottom:4rem;width:2px;background:linear-gradient(var(--wire) 0,var(--wire) 88%,transparent)}
+.board::after{content:"";position:absolute;left:calc(var(--rail-x) - 7px);top:calc(var(--hero-pt) + .6rem - 7px);width:14px;height:14px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 4px var(--bg),0 0 18px 2px rgba(255,221,70,.35)}
+
+/* úvod */
+.intro{padding:var(--hero-pt) 0 3.5rem}
+.intro__side{display:none}
+.kicker{position:relative;font:600 .78rem/1.2rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);margin:0 0 1rem}
+.kicker::before{content:"";position:absolute;top:calc(.6rem - 1px);left:calc(-1 * var(--off) + 7px);width:calc(var(--off) - 13px);height:2px;background:var(--wire)}
+h1{margin:0 0 1.25rem}
+.h1__brand{display:block;font:700 .95rem/1.2 var(--mono);letter-spacing:.06em;color:var(--soft);margin-bottom:.6rem}
+.h1__main{display:block;font-size:clamp(2.3rem,11vw,5.4rem);line-height:.98;letter-spacing:-.01em}
+.h1__main .hl{box-shadow:inset 0 -.12em 0 var(--yellow);white-space:nowrap}
+.lead{font-size:1.125rem;color:var(--soft);max-width:34rem;margin-bottom:1.75rem}
+.lead strong{color:var(--text);font-weight:600}
+
+.call{display:inline-flex;align-items:center;gap:.9rem;background:var(--yellow);color:var(--ink);text-decoration:none;border-radius:6px;padding:.95rem 1.4rem .95rem 1.05rem;box-shadow:0 0 0 1px rgba(0,0,0,.25),0 14px 32px -14px rgba(255,221,70,.55);transition:background-color .15s}
+.call:hover{background:var(--yellow-hi);color:var(--ink)}
+.call:active{transform:translateY(1px)}
+.call svg{width:28px;height:28px;flex:none}
+.call__txt{display:flex;flex-direction:column;line-height:1.05}
+.call__label{font:700 .74rem/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.call__num{font:700 1.7rem/1.1 var(--display);white-space:nowrap}
+.alt{font-size:.95rem;color:var(--muted);margin:1rem 0 0}
+.alt a{overflow-wrap:anywhere}
+
+/* štítek */
+.plate{
+  position:relative;margin-top:2.75rem;border:1px solid var(--line);border-radius:8px;padding:1.4rem 1.3rem 1.1rem;
+  background:
+    radial-gradient(circle at 11px 11px,#6b747c 0 3px,#2b3136 3.5px,transparent 4.5px),
+    radial-gradient(circle at calc(100% - 11px) 11px,#6b747c 0 3px,#2b3136 3.5px,transparent 4.5px),
+    radial-gradient(circle at 11px calc(100% - 11px),#6b747c 0 3px,#2b3136 3.5px,transparent 4.5px),
+    radial-gradient(circle at calc(100% - 11px) calc(100% - 11px),#6b747c 0 3px,#2b3136 3.5px,transparent 4.5px),
+    linear-gradient(160deg,#283036,#1d2226);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 20px 40px -24px rgba(0,0,0,.9)}
+.plate__head{display:flex;justify-content:space-between;gap:1rem;font:700 .74rem/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:1px dashed var(--line);padding:0 .25rem .75rem;margin:0 0 .4rem}
+.plate__head span:first-child{color:var(--yellow)}
+.plate dl{margin:0}
+.plate dl div{display:grid;grid-template-columns:6.6rem minmax(0,1fr);gap:.75rem;padding:.55rem .25rem;border-bottom:1px solid var(--line-soft)}
+.plate dl div:last-child{border-bottom:0}
+.plate dt{font:600 .72rem/1.6rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.plate dd{margin:0;font-size:.98rem;line-height:1.45;padding-top:.08rem}
+.plate dd a{font-weight:700;text-decoration:none}
+
+/* ---------- okruhy (sekce) ---------- */
+.circuit{padding:3.25rem 0;border-top:1px solid var(--line-soft)}
+.tag{position:relative;display:flex;align-items:center;gap:.6rem;margin:0 0 1rem;font:600 .76rem/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tag b{background:var(--yellow);color:var(--ink);padding:.12rem .42rem;border-radius:3px;letter-spacing:.06em}
+.tag::before{content:"";position:absolute;top:50%;left:calc(var(--rail-x) - var(--pad-l) - 6px);width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--bg);border:2px solid var(--yellow);box-shadow:0 0 0 4px var(--bg)}
+.tag::after{content:"";position:absolute;top:50%;margin-top:-1px;left:calc(var(--rail-x) - var(--pad-l) + 6px);width:calc(var(--off) - 12px);height:2px;background:var(--wire)}
+h2{font-size:clamp(2rem,6.5vw,3.1rem);letter-spacing:-.005em;margin-bottom:1rem;max-width:22ch}
+.intro-p{color:var(--soft);max-width:40rem}
+h3{font-size:1.35rem;margin:2.25rem 0 .35rem}
+.sub{color:var(--muted);font-size:.95rem;margin:0 0 1rem;max-width:40rem}
+
+/* služby: moduly na DIN liště */
+.din{list-style:none;margin:0 0 1rem;padding:.25rem 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem .75rem;isolation:isolate}
+.mod{position:relative;display:flex;flex-direction:column;background:linear-gradient(#f1f2f3,var(--module));color:var(--module-ink);border-radius:6px;padding:.65rem .8rem 1rem;box-shadow:inset 0 1px 0 #fff,0 10px 22px -14px rgba(0,0,0,.9)}
+.mod::before{content:"";position:absolute;z-index:-1;left:-.75rem;right:-.75rem;top:calc(2.7rem - 7px);height:14px;border-radius:2px;
+  background:linear-gradient(90deg,rgba(0,0,0,.42) 0 10px,transparent 10px) 0 50%/24px 4px repeat-x,linear-gradient(#a7afb6,#6b737a)}
+.mod__id{display:flex;justify-content:space-between;font:700 .7rem/1 var(--mono);letter-spacing:.08em;color:var(--module-muted)}
+.mod__lever{width:18px;height:30px;border-radius:3px;background:#2a3035;margin:.55rem 0 .75rem;position:relative;box-shadow:inset 0 2px 3px rgba(0,0,0,.5)}
+.mod__lever::after{content:"";position:absolute;left:3px;right:3px;top:3px;height:12px;border-radius:2px;background:var(--yellow);box-shadow:0 1px 0 rgba(0,0,0,.35)}
+.mod h4{font-size:1.12rem;line-height:1.15;margin:0 0 .4rem;overflow-wrap:break-word;hyphens:auto}
+.mod p{margin:0;font-size:.9rem;line-height:1.45;color:var(--module-muted)}
+.mod--wide{grid-column:span 2}
+.mod--spare{background:var(--bg);color:var(--text);border:2px dashed rgba(255,221,70,.6);box-shadow:none}
+.mod--spare .mod__id{color:var(--muted)}
+.mod--spare .mod__lever{background:transparent;border:2px dashed var(--line);box-shadow:none}
+.mod--spare .mod__lever::after{display:none}
+.mod--spare p{color:var(--soft)}
+.mod--spare a{display:inline-block;margin-top:.6rem;font:700 1.05rem/1.2 var(--display);color:var(--yellow)}
+
+/* kdo přijde */
+.note{border:1px solid var(--line);border-left:4px solid var(--yellow);background:var(--panel);border-radius:6px;padding:1.2rem 1.25rem .4rem;margin:1.75rem 0 0;max-width:44rem}
+.note h3{margin:0 0 .6rem;font-size:1.25rem}
+.note p{color:var(--soft)}
+.protocol{margin:1rem 0 0;border-top:1px solid var(--line)}
+.protocol div{display:grid;align-content:start;grid-template-columns:2rem minmax(0,1fr);column-gap:.9rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.protocol dt{grid-column:2;font:700 1.2rem/1.2 var(--display);margin-bottom:.3rem}
+.protocol dd{grid-column:2;margin:0;color:var(--soft)}
+.protocol div::before{content:"";grid-row:1 / span 2;width:1.6rem;height:1.6rem;margin-top:-.1rem;border-radius:4px;background:var(--yellow) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%2315181b' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
+.facts{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.75rem}
+.facts li{background:var(--panel);border:1px solid var(--line-soft);border-radius:6px;padding:.9rem 1rem;color:var(--soft)}
+.facts b{display:block;font:600 .72rem/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.25rem}
+
+/* postup: tři fáze */
+.phases{list-style:none;margin:1.75rem 0 2rem;padding:0;position:relative;display:grid;gap:1.75rem}
+.phases li:not(:last-child)::after{content:"";position:absolute;left:calc(1.3rem - 1px);top:2.45rem;bottom:-1.6rem;width:2px;background:var(--wire)}
+.phases li{position:relative;padding-left:3.6rem}
+.phase{position:absolute;left:0;top:-.15rem;width:2.6rem;height:2.6rem;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:2px solid var(--yellow);font:700 .9rem/1 var(--mono);color:var(--yellow)}
+.phases li:last-child .phase{background:var(--yellow);color:var(--ink)}
+.phases h3{margin:0 0 .4rem;font-size:1.4rem}
+.phases p{color:var(--soft);margin:0;max-width:30rem}
+.next{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}
+.next p{margin:0;font:600 .8rem/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* kontakt: svorkovnice */
+.terminals{font-style:normal;margin:1.5rem 0 0;border:1px solid var(--line);border-radius:8px;background:var(--panel);overflow:hidden}
+.terminals + .terminals{margin-top:1rem}
+.term{display:grid;grid-template-columns:24px minmax(0,1fr);column-gap:1rem;align-items:start;padding:1rem 1.1rem;border-top:1px solid var(--line-soft)}
+.term:first-child{border-top:0}
+.term::before{content:"";grid-row:1 / span 2;width:22px;height:22px;margin-top:.15rem;border-radius:50%;
+  background:linear-gradient(135deg,transparent 45%,#2a3035 45% 55%,transparent 55%),radial-gradient(circle at 35% 30%,#b9c0c6,#5f676e)}
+.term__label{display:block;font:600 .72rem/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.term__val{display:block;margin:0;color:var(--text)}
+.term__val a{color:var(--text);overflow-wrap:anywhere}
+.term--tel .term__val a{font:700 clamp(1.7rem,7vw,2.3rem)/1.15 var(--display);color:var(--yellow);text-decoration:none;white-space:nowrap}
+.map{display:inline-block;margin-top:.35rem;font:600 .82rem/1.4 var(--mono);letter-spacing:.04em}
+.term dd{margin:0}
+.gps{font:500 .8rem/1.6 var(--mono);color:var(--muted)}
+.owner{font-size:.9rem;color:var(--muted);margin:1.25rem 0 0}
+.owner a{color:var(--soft)}
+.contact-cta{margin-top:2rem}
+
+/* ---------- patička ---------- */
+.foot{max-width:1200px;margin:0 auto;padding:2rem var(--pad-r) 2.5rem 16px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 2rem;font:500 .8rem/1.5 var(--mono);color:var(--muted)}
+.foot p{margin:0}
+
+/* ---------- spodní lišta s voláním (mobil) ---------- */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:.5rem;padding:.6rem 12px calc(.6rem + env(safe-area-inset-bottom));background:rgba(21,24,27,.97);border-top:1px solid var(--line)}
+.dock__call{flex:1;display:flex;align-items:center;justify-content:center;gap:.6rem;min-height:54px;border-radius:6px;background:var(--yellow);color:var(--ink);text-decoration:none;font:700 1.2rem/1 var(--display)}
+.dock__call:hover{background:var(--yellow-hi);color:var(--ink)}
+.dock__call svg{width:22px;height:22px}
+.dock__call span{font-family:var(--mono);font-size:.9rem;font-weight:600;opacity:.8}
+.dock__mail{flex:none;width:54px;display:grid;place-items:center;border-radius:6px;border:1px solid var(--line);color:var(--text)}
+.dock__mail svg{width:24px;height:24px}
+
+/* ---------- tablet ---------- */
+@media (min-width:640px){
+  :root{--pad-l:56px;--pad-r:28px;--rail-x:22px;--hero-pt:3.5rem}
+  .top{padding-left:22px;padding-right:28px}
+  .foot{padding-left:22px;padding-right:28px}
+  .din{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .mod--spare{grid-column:span 3}
+  .facts{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .protocol{display:grid;grid-template-columns:1fr 1fr;column-gap:2rem}
+  .term{grid-template-columns:24px 8.5rem minmax(0,1fr);align-items:baseline}
+  .term::before{grid-row:auto;align-self:start;margin-top:0}
+  .term__label{padding-top:.1rem}
+}
+
+/* ---------- desktop: legenda vlevo, sběrnice, obsah vpravo ---------- */
+@media (min-width:1000px){
+  :root{--pad-l:32px;--pad-r:32px;--legend:168px;--gap:72px;--rail-x:calc(var(--pad-l) + var(--legend) + var(--gap) / 2);--off:calc(var(--gap) / 2);--hero-pt:5rem}
+  body{padding-bottom:0}
+  .dock{display:none}
+  .top{position:sticky;top:0;z-index:20;max-width:none;padding:.8rem max(32px,calc((100% - 1200px) / 2 + 32px));background:rgba(21,24,27,.93);border-bottom:1px solid var(--line-soft);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  html{scroll-padding-top:5rem}
+  .legend{display:flex;gap:.25rem;margin-left:auto}
+  .legend a{display:flex;align-items:center;gap:.45rem;padding:.5rem .7rem;border-radius:4px;color:var(--soft);text-decoration:none;font:600 .78rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase}
+  .legend a:hover{background:var(--panel-2);color:var(--text)}
+  .legend span{color:var(--yellow)}
+  .top__call{background:var(--yellow);color:var(--ink);border:0;padding:.75rem 1rem;font-size:.95rem}
+  .top__call:hover{background:var(--yellow-hi);color:var(--ink)}
+
+  .intro{display:grid;grid-template-columns:var(--legend) minmax(0,1fr) minmax(0,23rem);column-gap:var(--gap);align-items:start;row-gap:.75rem;padding-bottom:5rem}
+  .intro__side{display:block;grid-column:1;align-self:stretch;justify-self:end;writing-mode:vertical-rl;transform:rotate(180deg);font:600 .7rem/1 var(--mono);letter-spacing:.32em;text-transform:uppercase;color:#5d666e}
+  .intro__head{grid-column:2 / 4;grid-row:1}
+  .intro__body{grid-column:2;grid-row:2}
+  .plate{grid-column:3;grid-row:2;margin-top:.3rem}
+  .intro__side{grid-row:1 / 3}
+
+  .circuit{display:grid;grid-template-columns:var(--legend) minmax(0,1fr);column-gap:var(--gap);padding:5rem 0}
+  .circuit > .tag{grid-column:1;align-self:start;position:sticky;top:6.5rem;justify-content:flex-end;margin-top:.9rem}
+  .circuit > .tag::before{left:calc(100% + var(--gap) / 2 - 6px)}
+  .circuit > .tag::after{left:calc(100% + 6px);width:calc(var(--gap) / 2 - 12px)}
+  .circuit > .body{grid-column:2;min-width:0}
+
+  .din{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .mod--wide{grid-column:span 1}
+  .mod--spare{grid-column:span 2}
+  .phases{grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+  .phases li:not(:last-child)::after{left:2.6rem;right:-2rem;top:calc(1.3rem - 1px);bottom:auto;width:auto;height:2px}
+  .phases li{padding:3.9rem 1rem 0 0}
+  .phases .phase{top:0}
+  .kontakt-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:2.5rem;align-items:start}
+  .kontakt-grid .terminals:first-child{margin-top:0}
+  .contact-cta{margin-top:0;padding:1.6rem;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+<header class="top">
+  <a class="brand" href="#obsah" aria-label="Elektrikar-servis – na začátek stránky"><span class="brand__mark" aria-hidden="true"></span>Elektrikar-servis</a>
+  <nav class="legend" aria-label="Hlavní navigace">
+    <a href="#sluzby"><span>Q1</span>Služby</a>
+    <a href="#kdo"><span>Q2</span>Kdo přijde</a>
+    <a href="#postup"><span>Q3</span>Postup</a>
+    <a href="#kontakt"><span>Q4</span>Kontakt</a>
+  </nav>
+  <a class="top__call" href="tel:+420730665378">730&nbsp;665&nbsp;378</a>
+</header>
+
+<main class="board" id="obsah">
+
+  <section class="intro" aria-labelledby="h1">
+    <p class="intro__side" aria-hidden="true">Elektrikar-servis · K Ryšánce 1592/22 · Praha 4 – Krč</p>
+    <div class="intro__head">
+      <p class="kicker">Vyučení elektrikáři · vyhláška 50</p>
+      <h1 id="h1"><span class="h1__brand">Elektrikar-servis</span><span class="h1__main">Elektrikáři z&nbsp;<span class="hl">Prahy&nbsp;4&nbsp;–&nbsp;Krče</span></span></h1>
+    </div>
+    <div class="intro__body">
+      <p class="lead">Dva vyučení elektrikáři, kterým můžete svěřit elektřinu doma i&nbsp;ve firmě. Opravíme zásuvku, vypínač i&nbsp;poruchu, zapojíme světla a&nbsp;spotřebiče. <strong>Nejdřív najdeme příčinu, pak řekneme cenu</strong> – a&nbsp;teprve potom pracujeme.</p>
+      <a class="call" href="tel:+420730665378">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+        <span class="call__txt"><span class="call__label">Zavolat elektrikáři</span><span class="call__num">+420&nbsp;730&nbsp;665&nbsp;378</span></span>
+      </a>
+      <p class="alt">Raději píšete? <a href="mailto:mikulastik.david93@gmail.com?subject=Popt%C3%A1vka%20elektrik%C3%A1%C5%99e">mikulastik.david93@gmail.com</a></p>
+    </div>
+
+    <aside class="plate" aria-label="Základní údaje v kostce">
+      <p class="plate__head"><span>Elektrikar-servis</span><span>Štítek</span></p>
+      <dl>
+        <div><dt>Kdo</dt><dd>Dva vyučení elektrikáři</dd></div>
+        <div><dt>Kvalifikace</dt><dd>Vyhláška 50 – kvalifikovaný elektrikář</dd></div>
+        <div><dt>Zaměření</dt><dd>Drobné opravy, poruchy a&nbsp;havarijní servis</dd></div>
+        <div><dt>Adresa</dt><dd>K&nbsp;Ryšánce 1592/22, Praha&nbsp;4&nbsp;–&nbsp;Krč</dd></div>
+        <div><dt>Telefon</dt><dd><a href="tel:+420730665378">+420&nbsp;730&nbsp;665&nbsp;378</a></dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="circuit" id="sluzby" aria-labelledby="h-sluzby">
+    <p class="tag" aria-hidden="true"><b>Q1</b>Služby</p>
+    <div class="body">
+      <h2 id="h-sluzby">S&nbsp;čím Vám pomůžeme</h2>
+      <p class="intro-p">Děláme veškeré elektro práce. Nejvíc se ale věnujeme drobným opravám a&nbsp;havarijnímu servisu – tedy tomu, co doma potřebujete vyřešit rychle a&nbsp;pořádně. Klidně volejte i&nbsp;kvůli jediné zásuvce.</p>
+
+      <h3>Drobné opravy a&nbsp;havarijní servis</h3>
+      <p class="sub">Na tohle se zaměřujeme nejvíc.</p>
+      <ul class="din">
+        <li class="mod"><span class="mod__id" aria-hidden="true"><span>F1</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Zásuvky a&nbsp;vypínače</h4><p>Opravíme zásuvku nebo vypínač, který nefunguje, jak má.</p></li>
+        <li class="mod"><span class="mod__id" aria-hidden="true"><span>F2</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Svítidla a&nbsp;LED osvětlení</h4><p>Namontujeme a&nbsp;odborně zapojíme jakékoli světlo, včetně LED svítidel.</p></li>
+        <li class="mod"><span class="mod__id" aria-hidden="true"><span>F3</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Připojení spotřebičů</h4><p>Odborně zapojíme Váš nový spotřebič.</p></li>
+        <li class="mod"><span class="mod__id" aria-hidden="true"><span>F4</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Poruchy</h4><p>Najdeme, kde je příčina, a&nbsp;poruchu opravíme.</p></li>
+        <li class="mod mod--wide"><span class="mod__id" aria-hidden="true"><span>F5</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Havarijní servis</h4><p>Pomoc, když elektřina vypoví službu a&nbsp;nemůže to čekat – v&nbsp;bytě, domě i&nbsp;firmě.</p></li>
+      </ul>
+
+      <h3>Další elektro práce</h3>
+      <p class="sub">Větší zakázky v&nbsp;domácnosti i&nbsp;ve firmě.</p>
+      <ul class="din">
+        <li class="mod"><span class="mod__id" aria-hidden="true"><span>F6</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Elektroinstalace v&nbsp;bytech a&nbsp;domech</h4><p>Zavolejte, co potřebujete udělat v&nbsp;bytě nebo domě, a&nbsp;domluvíme se.</p></li>
+        <li class="mod"><span class="mod__id" aria-hidden="true"><span>F7</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Rozvody elektřiny</h4><p>Profesionálně provedené rozvody elektřiny.</p></li>
+        <li class="mod"><span class="mod__id" aria-hidden="true"><span>F8</span><span>I</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Komerční prostory</h4><p>S&nbsp;elektro prací v&nbsp;komerčních prostorách máme zkušenosti.</p></li>
+        <li class="mod mod--spare"><span class="mod__id" aria-hidden="true"><span>F9</span><span>rezerva</span></span><span class="mod__lever" aria-hidden="true"></span><h4>Potřebujete něco jiného?</h4><p>Děláme veškeré elektro práce. Zavolejte a&nbsp;popište, co potřebujete.</p><a href="tel:+420730665378">Zavolat +420&nbsp;730&nbsp;665&nbsp;378</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="circuit" id="kdo" aria-labelledby="h-kdo">
+    <p class="tag" aria-hidden="true"><b>Q2</b>Kdo přijde</p>
+    <div class="body">
+      <h2 id="h-kdo">Kdo k&nbsp;Vám přijde</h2>
+      <p class="intro-p">Dva vyučení elektrikáři, kteří spolu pracují už několik let. Nejsme velká firma, jsme živnostníci – a&nbsp;na poctivě odvedené práci nám záleží. Největší radost nám dělají zákazníci, kteří se k&nbsp;nám vracejí.</p>
+
+      <div class="note">
+        <h3>Co pro Vás znamená „vyhláška&nbsp;50“?</h3>
+        <p>Je to odborná elektrotechnická kvalifikace, kterou elektrikář získá zkouškou. Pro Vás to znamená jednoduchou věc: u&nbsp;Vás pracuje <strong>kvalifikovaný elektrikář s&nbsp;ověřenými znalostmi</strong>, kterému můžete elektroinstalaci s&nbsp;klidem svěřit.</p>
+      </div>
+
+      <h3>Na čem si dáváme záležet</h3>
+      <dl class="protocol">
+        <div><dt>Bezpečnost</dt><dd>Práci dělá kvalifikovaný elektrikář. Po opravě vše vyzkoušíme a&nbsp;předáme Vám instalaci, která funguje, jak má.</dd></div>
+        <div><dt>Jasná diagnóza</dt><dd>Nejdřív zjistíme, kde je příčina. Vysvětlíme Vám ji srozumitelně a&nbsp;řekneme, co oprava obnáší.</dd></div>
+        <div><dt>Čistá práce</dt><dd>Pracujeme pečlivě a&nbsp;dotahujeme detaily. Po sobě uklidíme, abyste neměli práci navíc.</dd></div>
+        <div><dt>Domluvený termín</dt><dd>Přijdeme v&nbsp;čas, na kterém se domluvíme. Když se něco změní, dáme Vám vědět předem.</dd></div>
+      </dl>
+
+      <h3>Co si můžete ověřit</h3>
+      <ul class="facts">
+        <li><b>Kvalifikace</b>Vyučení elektrikáři s&nbsp;odbornou způsobilostí podle vyhlášky&nbsp;50.</li>
+        <li><b>Živnost</b>David Mikuláštík, IČO 06614281 – <a href="https://ares.gov.cz/ekonomicke-subjekty?ico=06614281" rel="noopener">záznam v&nbsp;registru ARES</a>.</li>
+        <li><b>Hodnocení zákazníků</b><span class="todo">[DOPLNIT – odkaz na skutečné recenze, např. Google]</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="circuit" id="postup" aria-labelledby="h-postup">
+    <p class="tag" aria-hidden="true"><b>Q3</b>Postup</p>
+    <div class="body">
+      <h2 id="h-postup">Jak to probíhá: tři kroky, tři fáze</h2>
+      <ol class="phases">
+        <li><span class="phase" aria-hidden="true">L1</span><h3>Zavoláte</h3><p>Popíšete, co se děje – co nesvítí, co vypadává nebo co chcete zapojit. Domluvíme termín, který Vám vyhovuje.</p></li>
+        <li><span class="phase" aria-hidden="true">L2</span><h3>Diagnóza a&nbsp;cena</h3><p>Na místě najdeme příčinu a&nbsp;vysvětlíme Vám ji. Než začneme, víte, co je potřeba udělat a&nbsp;kolik to bude stát.</p></li>
+        <li><span class="phase" aria-hidden="true">L3</span><h3>Oprava</h3><p>Opravíme, vyzkoušíme, že vše funguje, a&nbsp;po sobě uklidíme.</p></li>
+      </ol>
+      <div class="next">
+        <p>Krok L1 je na Vás</p>
+        <a class="call" href="tel:+420730665378">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          <span class="call__txt"><span class="call__label">Zavolat</span><span class="call__num">+420&nbsp;730&nbsp;665&nbsp;378</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="circuit" id="kontakt" aria-labelledby="h-kontakt">
+    <p class="tag" aria-hidden="true"><b>Q4</b>Kontakt</p>
+    <div class="body">
+      <h2 id="h-kontakt">Zavolejte, domluvíme se</h2>
+      <p class="intro-p">Nejrychleji se domluvíme po telefonu. Řekněte nám, co se děje, a&nbsp;najdeme termín.</p>
+      <div class="kontakt-grid">
+        <div>
+          <address class="terminals">
+            <p class="term term--tel"><span class="term__label">Telefon</span><span class="term__val"><a href="tel:+420730665378">+420&nbsp;730&nbsp;665&nbsp;378</a></span></p>
+            <p class="term"><span class="term__label">E-mail</span><span class="term__val"><a href="mailto:mikulastik.david93@gmail.com?subject=Popt%C3%A1vka%20elektrik%C3%A1%C5%99e">mikulastik.david93@gmail.com</a></span></p>
+            <p class="term"><span class="term__label">Adresa</span><span class="term__val">Elektrikar-servis<br>K&nbsp;Ryšánce 1592/22<br>147&nbsp;00 Praha&nbsp;4&nbsp;–&nbsp;Krč<br><span class="gps">GPS 50.0384158, 14.4297168</span><br><a class="map" href="https://mapy.cz/fnc/v1/showmap?center=14.4297168,50.0384158&amp;zoom=17&amp;marker=true" rel="noopener">Ukázat na mapě →</a></span></p>
+          </address>
+          <dl class="terminals">
+            <!-- Po ověření nahradit např.: <dd class="term__val"><time datetime="Mo-Su 00:00-24:00">Po–Ne, nonstop</time></dd> a doplnit openingHoursSpecification do JSON-LD -->
+            <div class="term"><dt class="term__label">Provozní doba</dt><dd class="term__val"><span class="todo">[DOPLNIT – Google uvádí nonstop, ověřit]</span></dd></div>
+            <div class="term"><dt class="term__label">Kde pracujeme</dt><dd class="term__val"><span class="todo">[DOPLNIT – oblast působnosti]</span></dd></div>
+          </dl>
+          <p class="owner">Provozovatel: David Mikuláštík, IČO 06614281</p>
+        </div>
+        <div class="contact-cta">
+          <p class="sub">Popište, co nefunguje nebo co chcete zapojit. Na místě pak najdeme příčinu a&nbsp;řekneme cenu.</p>
+          <a class="call" href="tel:+420730665378">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            <span class="call__txt"><span class="call__label">Zavolat elektrikáři</span><span class="call__num">+420&nbsp;730&nbsp;665&nbsp;378</span></span>
+          </a>
+          <p class="alt">Nebo napište: <a href="mailto:mikulastik.david93@gmail.com?subject=Popt%C3%A1vka%20elektrik%C3%A1%C5%99e">mikulastik.david93@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Elektrikar-servis · elektrikáři z&nbsp;Prahy&nbsp;4&nbsp;–&nbsp;Krče</p>
+  <p>Koncept webu – Richard Metzner</p>
+</footer>
+
+<nav class="dock" aria-label="Rychlý kontakt">
+  <a class="dock__call" href="tel:+420730665378">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+    Zavolat <span>730&nbsp;665&nbsp;378</span>
+  </a>
+  <a class="dock__mail" href="mailto:mikulastik.david93@gmail.com?subject=Popt%C3%A1vka%20elektrik%C3%A1%C5%99e" aria-label="Napsat e-mail">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+  </a>
+</nav>
+</body>
+</html>
